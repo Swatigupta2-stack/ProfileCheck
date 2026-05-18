@@ -1,0 +1,7 @@
+project_id = "xgkjyvxrxpqufupyqmes"
+
+[functions.ai-rewrite]
+verify_jwt = false
+
+[functions.ats-score]
+verify_jwt = false
