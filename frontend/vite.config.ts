@@ -8,11 +8,15 @@ export default defineConfig(({ mode }) => ({
     host: "localhost",
     port: 8080,
   },
-  plugins: [react()].filter(Boolean),
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: "dist",        // This creates the dist folder
+    emptyOutDir: true,     // Cleans old build before new one
   },
   define: {
     "process.env": {},
