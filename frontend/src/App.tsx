@@ -11,7 +11,7 @@ import PortfolioBuilder from "./pages/PortfolioBuilder";
 import Examples from "./pages/Examples";
 import Pricing from "./pages/Pricing";
 import Auth from "./pages/Auth";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard.tsx";
 import ATS from "./pages/ATS";
 import Upload from "./pages/Upload";
 import PublicPortfolio from "./pages/PublicPortfolio";

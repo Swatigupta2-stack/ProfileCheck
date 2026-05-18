@@ -26,7 +26,8 @@ const CoverLetterGenerator = ({ jobDescription, resumeData, userId }) => {
     setSuccessMsg('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/cover-letter/generate', {
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await axios.post(`${API_URL}/api/cover-letter/generate`, {
         jobDescription,
         resumeData,
         companyName
@@ -51,7 +52,8 @@ const CoverLetterGenerator = ({ jobDescription, resumeData, userId }) => {
     setError(null);
 
     try {
-      await axios.post('http://localhost:5000/api/cover-letter/save', {
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      await axios.post(`${API_URL}/api/cover-letter/save`, {
         userId,
         companyName,
         jobDescription,
