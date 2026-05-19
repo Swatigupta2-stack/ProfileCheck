@@ -1,3 +1,6 @@
+## 🌐 Live Demo
+
+**Access the live application:** [https://profile-check-f9dz.vercel.app](https://profile-check-f9dz.vercel.app)
 # 🌟 CareerForge Pro — Resume Builder
 
 A full-stack MERN application for building professional, ATS-optimized resumes with a real-time split-screen editor.
